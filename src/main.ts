@@ -1,5 +1,14 @@
+import "./style.scss";
+
 const main = async () => {
-  console.log("hello");
+  const renderCanvas = document.getElementById(
+    "renderCanvas"
+  ) as HTMLCanvasElement | null;
+  if (!renderCanvas) {
+    return;
+  }
+
+  console.log("hi");
 };
 
 main();
