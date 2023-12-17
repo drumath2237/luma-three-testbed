@@ -9,9 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@types/three": "^0.159.0",
+    "@lumaai/luma-web": "^0.1.15",
+    "@types/three": "^0.157.2",
     "sass": "^1.69.5",
-    "three": "^0.159.0",
+    "three": "^0.157.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   }

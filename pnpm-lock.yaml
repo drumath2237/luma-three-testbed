@@ -5,15 +5,18 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@lumaai/luma-web':
+    specifier: ^0.1.15
+    version: 0.1.15(@types/three@0.157.2)(three@0.157.0)
   '@types/three':
-    specifier: ^0.159.0
-    version: 0.159.0
+    specifier: ^0.157.2
+    version: 0.157.2
   sass:
     specifier: ^1.69.5
     version: 1.69.5
   three:
-    specifier: ^0.159.0
-    version: 0.159.0
+    specifier: ^0.157.0
+    version: 0.157.0
   typescript:
     specifier: ^5.2.2
     version: 5.3.3
@@ -221,6 +224,16 @@ packages:
     dev: true
     optional: true
 
+  /@lumaai/luma-web@0.1.15(@types/three@0.157.2)(three@0.157.0):
+    resolution: {integrity: sha512-gNI7qhwSDdvS6+IVFe9QpD2E/9VXRfO2dUn5CUVgvw+Ldus057ghBKdZ1AYO8Mgi/7J+OI4Nxd7r8YwzRf8/Pg==}
+    peerDependencies:
+      '@types/three': ^0.157.2
+      three: ^0.157.0
+    dependencies:
+      '@types/three': 0.157.2
+      three: 0.157.0
+    dev: true
+
   /@rollup/rollup-android-arm-eabi@4.9.1:
     resolution: {integrity: sha512-6vMdBZqtq1dVQ4CWdhFwhKZL6E4L1dV6jUjuBvsavvNJSppzi6dLBbuV+3+IyUREaj9ZFvQefnQm28v4OCXlig==}
     cpu: [arm]
@@ -329,8 +342,8 @@ packages:
     resolution: {integrity: sha512-pXNfAD3KHOdif9EQXZ9deK82HVNaXP5ZIF5RP2QG6OQFNTaY2YIetfrE9t528vEreGQvEPRDDc8muaoYeK0SxQ==}
     dev: true
 
-  /@types/three@0.159.0:
-    resolution: {integrity: sha512-2gybdh7HtX+rGUgslzK7QEJfzD2I0qrbUGzKk+dK0FDx49UHkNX0rqZVRzIgeFjBd1HzzhNNgwNoMacm3Wyc7w==}
+  /@types/three@0.157.2:
+    resolution: {integrity: sha512-2kykrMgvO5LTAiahadM6ijoER+GcbEJ61pQVOyGxIJTCASoUnzwJvfhilsLxvEw4+glzhLYUDvvTvNjx+58Vzw==}
     dependencies:
       '@types/stats.js': 0.17.3
       '@types/webxr': 0.5.10
@@ -537,8 +550,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /three@0.159.0:
-    resolution: {integrity: sha512-eCmhlLGbBgucuo4VEA9IO3Qpc7dh8Bd4VKzr7WfW4+8hMcIfoAVi1ev0pJYN9PTTsCslbcKgBwr2wNZ1EvLInA==}
+  /three@0.157.0:
+    resolution: {integrity: sha512-CeAwQrf4x3z0/e+MC4F+nXLW5t0gh3pw+L6CCBqpHvOq3bGYIgRYub7Pv0j/9wR+d++OiEglyZzWyuSYbwWGOA==}
     dev: true
 
   /to-regex-range@5.0.1:
