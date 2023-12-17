@@ -1,13 +1,8 @@
-import {
-  BoxGeometry,
-  Mesh,
-  MeshBasicMaterial,
-  PerspectiveCamera,
-  Scene,
-  WebGLRenderer,
-} from "three";
+import { PerspectiveCamera, Scene, WebGLRenderer } from "three";
 // @ts-ignore
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+
+import { LumaSplatsThree } from "@lumaai/luma-web";
 
 import "./style.scss";
 
@@ -34,11 +29,10 @@ const main = async () => {
 
   const controls = new OrbitControls(camera, renderer.domElement);
 
-  const cube = new Mesh(
-    new BoxGeometry(1, 1, 1),
-    new MeshBasicMaterial({ color: 0x00ff00 })
-  );
-  scene.add(cube);
+  const splats = new LumaSplatsThree({
+    source: "https://lumalabs.ai/capture/ca9ea966-ca24-4ec1-ab0f-af665cb546ff",
+  });
+  scene.add(splats);
 
   const animate = () => {
     requestAnimationFrame(animate);
